@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS comming_soon;
+DROP DATABASE IF EXISTS sneakers_db;
 
-CREATE DATABASE comming_soon;
+CREATE DATABASE sneakers_db;
