@@ -1,2 +1,2 @@
-# Project-2-Group-2
+# Sneaker Sniper
 Project 2 - Group 2
