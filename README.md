@@ -1,4 +1,3 @@
 # Sneaker Sniper
-Project 2 - Group 2
 
-This is a test. Hello?
+Project 2 - Group 2
