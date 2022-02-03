@@ -11,22 +11,9 @@ Brands.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    brand_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'pool',
-        key: 'id',
-      },
-    },
-    user: {
+    brand_name: {
       type: DataTypes.STRING,
     },
-    row: {
-      type: DataTypes.INTEGER,
-    },
-    col: {
-      type: DataTypes.INTEGER,
-    } 
   },
   {
     sequelize,
