@@ -1,7 +1,7 @@
 const seedBrands = require('./brands-seeds');
 const seedTypes = require('./types-seeds');
 // const seedProducts = require('./product-seeds');
-// const seedTags = require('./tag-seeds');
+// const seedTags = require('./tags-seeds');
 // const seedProductTags = require('./product-tag-seeds');
 
 const sequelize = require('../config/connection');
