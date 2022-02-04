@@ -1,1 +1,4 @@
-<h1>{{allBrands.dataValues.brand_name}}</h1>
+{{#each allBrands as |brand|}}
+    {{brand.dataValues.brand_name}}
+
+{{/each}}
