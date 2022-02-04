@@ -2,12 +2,6 @@ const { Types } = require('../models');
 
 const typesData = [
   {
-    type_name: 'High-Top',
-  },
-  {
-    type_name: 'Low-Top',
-  },
-  {
     type_name: 'Basketball',
   },
   {

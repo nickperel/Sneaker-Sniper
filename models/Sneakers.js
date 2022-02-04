@@ -33,14 +33,25 @@ Sneakers.init(
       validate: {
         isInt: true
       },
+    img: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    }
     },
-    type_id: {
+    brand_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'types',
+        model: 'brands',
         key: 'id'
       }
-    }
+    },
+    type_id: {
+        type: DataTypes.INTEGER,
+        references: {
+          model: 'types',
+          key: 'id'
+        }
+      }
   },
   {
     sequelize,
