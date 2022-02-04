@@ -14,13 +14,6 @@ Types.init(
     type_name: {
         type: DataTypes.STRING,
         allowNull: false
-      },
-    brand_id: {
-      type: DataTypes.INTEGER,
-      references: {
-          model: 'brands',
-          key: 'id'
-      }
     },
   },
   {
