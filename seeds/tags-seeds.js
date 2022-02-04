@@ -2,6 +2,12 @@ const { Tags } = require('../models');
 
 const tagsData = [
   {
+    tag_name: 'high-top',
+  },
+  {
+    tag_name: 'low-top',
+  },
+  {
     tag_name: 'black',
   },
   {
@@ -25,12 +31,6 @@ const tagsData = [
   {
     tag_name: 'yellow',
   },
-  {
-    tag_name: 'high-top',
-  },
-  {
-    tag_name: 'low-top',
-  }
 ];
 
 const seedTags = () => Tags.bulkCreate(tagsData);
