@@ -3,8 +3,8 @@ const Brands = require('./Brands');
 const Types = require('./Types');
 const Tags = require('./Tags');
 const Sneakers = require('./Sneakers');
-const SneakerTags = require('./SneakerTags');
 const UserSneakers = require('./UserSneakers');
+const SneakerTags = require('./SneakerTags');
 
 Sneakers.belongsTo(Brands, {
     foreignKey: 'brand_id'
@@ -24,17 +24,17 @@ Types.hasMany(Sneakers, {
 
 Sneakers.belongsToMany(Tags, {
     through: SneakerTags,
-    foreignKey: 'sneakers_id'
+    foreignKey: 'sneaker_id'
 });
 
 Tags.belongsToMany(Sneakers, {
     through: SneakerTags,
-    foreignKey: 'tags_id'
+    foreignKey: 'tag_id'
 });
 
 Sneakers.belongsToMany(User, {
     through: UserSneakers,
-    foreignKey: 'sneakers_id'
+    foreignKey: 'sneaker_id'
 });
 
 User.belongsToMany(Sneakers, {
@@ -42,4 +42,4 @@ User.belongsToMany(Sneakers, {
     foreignKey: 'user_id'
 });
 
-module.exports = { User, Brands, Types, Tags, Sneakers };
+module.exports = { User, Brands, Types, Tags, Sneakers, SneakerTags };

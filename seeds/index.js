@@ -2,7 +2,7 @@ const seedBrands = require('./brands-seeds');
 const seedTypes = require('./types-seeds');
 const seedTags = require('./tags-seeds');
 const seedSneakers = require('./sneakers-seeds');
-// const seedProductTags = require('./product-tag-seeds');
+const seedSneakerTags = require('./sneaker-tags-seeds');
 
 const sequelize = require('../config/connection');
 
@@ -22,8 +22,8 @@ const seedAll = async () => {
   await seedSneakers();
   console.log('\n----- SNEAKERS SEEDED -----\n');
 
-//   await seedProductTags();
-//   console.log('\n----- PRODUCT TAGS SEEDED -----\n');
+  await seedSneakerTags();
+  console.log('\n----- SNEAKER TAGS SEEDED -----\n');
 
   process.exit(0);
 };

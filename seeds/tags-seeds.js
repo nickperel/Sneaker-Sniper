@@ -31,6 +31,15 @@ const tagsData = [
   {
     tag_name: 'yellow',
   },
+  {
+    tag_name: 'grey',
+  },
+  {
+    tag_name: 'brown',
+  },
+  {
+    tag_name: 'multi-color',
+  },
 ];
 
 const seedTags = () => Tags.bulkCreate(tagsData);

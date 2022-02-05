@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { type } = require('express/lib/response');
-const { User, Brands, Types, Tags, Sneakers } = require('../models');
+const { User, Brands, Types, Tags, Sneakers, SneakerTags } = require('../models');
 // Import the custom middleware
 const withAuth = require('../utils/auth');
 
@@ -96,7 +96,7 @@ router.get('/allSneakers/:id', async (req, res) => {
             model: Tags,
             attributes: [
               'id',
-                'tag_name',
+              'tag_name',
                 
               ],
           },
