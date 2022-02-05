@@ -89,14 +89,7 @@ router.get('/allSneakers/:id', async (req, res) => {
     try {
       const allSneakers = await Sneakers.findByPk(req.params.id, {
         include: [
-            {
-                model: Tags,
-                attributes: [
-                  'id',
-                    'tag_name',
-                    
-                  ],
-              },
+          
           {
             model: Types,
             attributes: [
@@ -104,6 +97,14 @@ router.get('/allSneakers/:id', async (req, res) => {
               'Type_name',
               
             ],
+          },
+          {
+            model: Tags,
+            attributes: [
+              'id',
+                'tag_name',
+                
+              ],
           },
           
         ],
