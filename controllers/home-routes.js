@@ -8,13 +8,13 @@ router.get('/', async (req, res) => {
     try {
       const allBrands = await Brands.findAll({
         
-      });
+    });
   
     
   console.log('allBrands' , allBrands );
       res.render('homepage', {
-        allBrands,
-        loggedIn: req.session.loggedIn,
+       allBrands,
+      loggedIn: req.session.loggedIn,
       });
     } catch (err) {
       console.log(err);

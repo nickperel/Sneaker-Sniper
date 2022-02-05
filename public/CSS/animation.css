@@ -1,0 +1,19 @@
+.button {
+    border: white;
+    border-color: whitesmoke;
+    color:red;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: black;
+  }
+  body {
+      background-color: black;
+}
+.bg-primary {
+    background-color: rgb(131, 64, 64) !important;
+}
