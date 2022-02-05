@@ -40,7 +40,8 @@ router.get('/', async (req, res) => {
               'id',
               'sneaker_name',
               'price',
-              'stock',        
+              'stock',
+              'img',        
               'type_id',
             ],
           },
@@ -63,13 +64,7 @@ router.get('/', async (req, res) => {
 router.get('/allSneakers', async (req, res) => {
     try {
       const allSneakers = await Sneakers.findAll({
-        include: [
-            {
-              model: Types,
-              attributes: 'type_name',
-            },
-           
-          ],
+       
           
       });
   
