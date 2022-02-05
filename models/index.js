@@ -6,7 +6,7 @@ const Sneakers = require('./Sneakers');
 const SneakerTags = require('./SneakerTags');
 const UserSneakers = require('./UserSneakers');
 
-Sneakers.hasOne(Brands, {
+Sneakers.belongsTo(Brands, {
     foreignKey: 'brand_id'
 });
 
@@ -14,7 +14,7 @@ Brands.hasMany(Sneakers, {
     foreignKey: 'brand_id'
 });
 
-Sneakers.hasOne(Types, {
+Sneakers.belongsTo(Types, {
     foreignKey: 'type_id'
 });
 
