@@ -1,4 +1,8 @@
-<h1>{{allBrands.dataValues.brand_name}}</h1>
+<h2>{{newBrands.brand_name}}</h2>
+{{#each newBrands.sneakers as |sneakers|}}
+  <a href="/allSneakers/{{id}}"> <h2>{{sneaker_name}} </h2><br></a>
+  price : {{price}} $ <br>
+   stock : {{stock}} <br>
+   <hr>
+    {{/each}}
 
-
-{{>test data=allBrands}}
