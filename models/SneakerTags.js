@@ -7,14 +7,9 @@ class SneakerTags extends Model {}
 SneakerTags.init(
   {
     // define columns
-    id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true
-    },
     sneaker_id: {
       type: DataTypes.INTEGER,
+      allowNull: false,
       references: {
         model: 'sneakers',
         key: 'id'
