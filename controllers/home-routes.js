@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
   
     
   console.log('allBrands' , allBrands );
-      res.render('homepage', {
+      res.render('pages/homepage', {
         allBrands,
         loggedIn: req.session.loggedIn,
       });
@@ -30,7 +30,7 @@ router.get('/', async (req, res) => {
       
       console.log('the brand you want is', allBrands);
       console.log('session is', req.session);
-      res.render('allBrands', { allBrands , username: req.session.username });
+      res.render('pages/allBrands', { allBrands , username: req.session.username });
     } catch (err) {
       console.log(err);
       res.status(500).json(err);
@@ -47,7 +47,7 @@ router.get('/login', (req, res) => {
     return;
   }
 
-  res.render('login');
+  res.render('pages/login');
 });
 
 module.exports = router;
