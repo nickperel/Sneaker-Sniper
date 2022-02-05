@@ -50,7 +50,6 @@ router.get('/', async (req, res) => {
        
         
    const newBrands = allBrands.get({ plain: true });
-      console.log('the brand you want is this///////////////////////////////////////////////////', newBrands);
       //console.log('session is', req.session);
       res.render('pages/allBrands', { newBrands , username: req.session.username });
     } catch (err) {

@@ -1,8 +1,11 @@
 {{#each allSneakers as |sneakers|}}
-    <h1>{{sneakers.dataValues.sneaker_name}}</h1> <br>
-  <h1> price : {{sneakers.dataValues.price}}$ </h1><br>
-  <h1> stock: {{sneakers.dataValues.stock}} </h1><br>
-  
-    <img src="{{sneakers.dataValues.img}}" alt="image of shoes"> <br><hr> 
-    
+<h1>{{sneakers.dataValues.sneaker_name}}</h1>
+<br />
+<h1> price : {{sneakers.dataValues.price}}$ </h1><br />
+<h1> stock: {{sneakers.dataValues.stock}} </h1><br />
+
+<img src="{{sneakers.dataValues.img}}" alt="image of shoes" />
+<br />
+<hr />
+
 {{/each}}
