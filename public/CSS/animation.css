@@ -1,0 +1,47 @@
+.button {
+  border: white;
+  border-color: whitesmoke;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 12px;
+
+}
+.button:hover {
+    background-color: #f44336;
+    color: white;
+    
+  }
+
+.container {
+  background-color: whitesmoke;
+  font-family: Copperplate, Papyrus, fantasy;
+  font-size: 350px;
+  border-style: solid;
+  border-left-color: red;
+  border-right-color: red;
+  border-color: red;
+  border-width: 3px;
+  background: black ;
+  box-shadow: lightgrey;
+}
+.page {
+  background-color: black;
+}
+h1 {
+  background-color: black;
+  border: red;
+  text-align: center;
+  color: white;
+}
+body {
+  background-image: url(/Users/cvasquez/Sneaker-Sniper/public/images/sneakers.jpeg);
+  background-position-x: 10px;
+}
+

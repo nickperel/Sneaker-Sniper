@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/nickperel/Project-2-Group-2#readme",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.2",
     "dotenv": "^14.3.2",
