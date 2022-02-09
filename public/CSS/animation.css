@@ -28,11 +28,13 @@
   border-right-color: red;
   border-color: red;
   border-width: 3px;
-  background: black ;
+  /* background: black; */
   box-shadow: lightgrey;
 }
 .page {
+  background-image: url(/public/images/sneakers.jpeg);
   background-color: black;
+  background-position-x: 10px;
 }
 h1 {
   background-color: black;
@@ -40,8 +42,8 @@ h1 {
   text-align: center;
   color: white;
 }
-body {
-  background-image: url(/Users/cvasquez/Sneaker-Sniper/public/images/sneakers.jpeg);
+/* body {
+  background-image: url(public/images/sneakers.jpeg);
   background-position-x: 10px;
-}
+} */
 

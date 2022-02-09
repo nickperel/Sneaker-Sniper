@@ -4,22 +4,29 @@ const { User, Brands, Types, Tags, Sneakers, SneakerTags } = require('../models'
 // Import the custom middleware
 const withAuth = require('../utils/auth');
 
+router.get('/welcome', (req, res) => {
+  res.render('pages/welcome')
+})
+ 
+
+
+
 //get all brands
-router.get('/', async (req, res) => {
+router.get('/allBrands', async (req, res) => {
     try {
       const allBrands = await Brands.findAll({
-        // include: [
-        //     {
-        //       model:Sneakers,
-        //       attributes: ['sneaker_name', 'type_id'],
-        //     },
-        //   ],
+    //     include: [
+    //         {
+    //           model:Sneakers,
+    //           attributes: ['sneaker_name', 'type_id'],
+    //         },
+    //       ],
       });
   
       const brands = allBrands.map((brands) =>
       brands.get({ plain: true })
     );
- // console.log('allBrands' , allBrands );
+  //console.log('allBrands' , allBrands );
       res.render('pages/homepage', {
         allBrands,
         loggedIn: req.session.loggedIn,
@@ -29,6 +36,9 @@ router.get('/', async (req, res) => {
       res.status(500).json(err);
     }
   });
+
+
+ 
 //get one brand
   router.get('/allBrands/:id', async (req, res) => {
     try {
