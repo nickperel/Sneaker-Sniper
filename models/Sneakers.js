@@ -4,7 +4,7 @@ const { Model, DataTypes, INTEGER } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // Initialize Product model (table) by extending off Sequelize's Model class
-class Sneakers extends Model {}
+class Sneakers extends Model { }
 
 // set up fields and rules for Product model
 Sneakers.init(
@@ -33,6 +33,18 @@ Sneakers.init(
       validate: {
         isInt: true
       },
+
+    },
+    img: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    brand_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'brands',
+        key: 'id'
+      }
     },
     type_id: {
       type: DataTypes.INTEGER,

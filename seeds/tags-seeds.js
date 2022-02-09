@@ -2,6 +2,12 @@ const { Tags } = require('../models');
 
 const tagsData = [
   {
+    tag_name: 'high-top',
+  },
+  {
+    tag_name: 'low-top',
+  },
+  {
     tag_name: 'black',
   },
   {
@@ -24,6 +30,15 @@ const tagsData = [
   },
   {
     tag_name: 'yellow',
+  },
+  {
+    tag_name: 'grey',
+  },
+  {
+    tag_name: 'brown',
+  },
+  {
+    tag_name: 'multi-color',
   },
 ];
 

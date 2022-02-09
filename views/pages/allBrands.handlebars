@@ -1,0 +1,9 @@
+<h2>{{newBrands.brand_name}}</h2>
+{{#each newBrands.sneakers as |sneakers|}}
+  <a href="/allSneakers/{{id}}"> <h2>{{sneaker_name}} </h2><br></a>
+  price : {{price}} $ <br>
+   stock : {{stock}} <br>
+   <img src="{{img}}" alt="image of shoes"> <br><hr>
+   <hr>
+    {{/each}}
+
