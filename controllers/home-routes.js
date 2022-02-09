@@ -5,7 +5,7 @@ const { User, Brands, Types, Tags, Sneakers, SneakerTags } = require('../models'
 const withAuth = require('../utils/auth');
 
 //get all brands
-router.get('/', async (req, res) => {
+router.get('/allBrands', async (req, res) => {
     try {
       const allBrands = await Brands.findAll({
     //     include: [
