@@ -4,6 +4,13 @@ const { User, Brands, Types, Tags, Sneakers, SneakerTags } = require('../models'
 // Import the custom middleware
 const withAuth = require('../utils/auth');
 
+router.get('/welcome', (req, res) => {
+  res.render('pages/welcome')
+})
+ 
+
+
+
 //get all brands
 router.get('/allBrands', async (req, res) => {
     try {

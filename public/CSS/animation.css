@@ -41,7 +41,7 @@ h1 {
   color: white;
 }
 body {
-  background-image: url(/Users/cvasquez/Sneaker-Sniper/public/images/sneakers.jpeg);
+  background-image: url(public/images/sneakers.jpeg);
   background-position-x: 10px;
 }
 
