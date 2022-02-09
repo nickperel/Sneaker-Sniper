@@ -20,7 +20,7 @@
   }
 
 .container {
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
   font-family: Copperplate, Papyrus, fantasy;
   font-size: 350px;
   border-style: solid;
@@ -32,18 +32,19 @@
   box-shadow: lightgrey;
 }
 .page {
-  background-image: url(/public/images/sneakers.jpeg);
-  background-color: black;
+  
+  background-color: rgb(71, 68, 68);
   background-position-x: 10px;
 }
 h1 {
-  background-color: black;
+  background-color: rgb(87, 78, 78);
   border: red;
   text-align: center;
   color: white;
 }
-/* body {
-  background-image: url(public/images/sneakers.jpeg);
+body {
+  background-image: url('/images/sneakers.png');
+  
   background-position-x: 10px;
-} */
+}
 
