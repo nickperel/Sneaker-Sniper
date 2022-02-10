@@ -79,8 +79,15 @@
 
   nav {
     background-color: red;
-    
     height: 65px;
+    display: flex;
+    align-items: center;
+  }
+
+
+
+  .home-btn :hover, .login-btn :hover {
+    background-color: black;
   }
 
   nav a {
@@ -119,9 +126,24 @@
  border-radius: 35%;
  text-align: center;
  margin-left: 20px;
- margin-bottom: 100px;
-  
   }
+
+  .white-text {
+    color: white;
+  }
+
+  .brand-title {
+    background-color: black;
+    border: red;
+    text-align: center;
+    color: white;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px;
+    font-size: 65px;
+    margin-bottom: 20px;
+  }
+
   @media only screen and (max-width: 1200px) {
    .logo img {
       display: none;

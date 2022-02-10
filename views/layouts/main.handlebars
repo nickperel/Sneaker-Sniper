@@ -16,7 +16,7 @@
 
 {{!-- <body> --}}
 
-  <nav>
+  <nav class="animate__animated animate__fadeInDownBig">
 
     {{!-- <div class="collapse" id="navbarToggleExternalContent">
   <div class="bg-dark p-4">
@@ -32,11 +32,11 @@
   </div> --}}
 {{!-- </nav> --}}
 
-    <a class="btn btn-danger"href="/welcome">Home</a>
+    <a class="btn btn-outline-dark home-btn"href="/allBrands">Home</a>
     {{#if loggedIn}}
-    <button class="btn btn-danger"id="logout" class="btn-no-style">Logout</button>
+    <button class="btn btn-outline-dark logout-btn"id="logout" class="btn-no-style">Logout</button>
     {{else}}
-    <a class="btn btn-danger"href="/login">Login</a>
+    <a class="btn btn-outline-dark login-btn"href="/login">Login</a>
     {{/if}}
    
   </nav>
