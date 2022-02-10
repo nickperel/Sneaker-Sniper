@@ -89,6 +89,14 @@ const sneakersData = [
     brand_id: 3,
     type_id: 3,
   },
+  {
+    sneaker_name: 'Asics Gel Lyte 3 "Orange Koi"',
+    price: 985.00,
+    stock: 9.5,
+    img: 'public/images/asics'orangekoi'.png',
+    brand_id: 5,
+    type_id: 3,
+  }
 ];
 
 const seedSneakers = () => Sneakers.bulkCreate(sneakersData);
