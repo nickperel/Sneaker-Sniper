@@ -1,8 +1,15 @@
-<h2>{{newBrands.brand_name}}</h2>
+<link rel="stylesheet" href="/CSS/style.css">
+
+<h1>{{newBrands.brand_name}}</h1>
+
 {{#each newBrands.sneakers as |sneakers|}}
-  <a href="/allSneakers/{{id}}"> <h2>{{sneaker_name}} </h2><br></a>
-  price : {{price}} $ <br>
-   stock : {{stock}} <br>
+  <a class="shoe-names" href="/allSneakers/{{id}}"> <h2>{{sneaker_name}} </h2><br></a>
+
+  <div class="price-stock">
+    Price: ${{price}} <br>
+    Stock: {{stock}} <br>
+  </div>
+
    <img src="{{img}}" alt="image of shoes"> <br><hr>
    <hr>
     {{/each}}
