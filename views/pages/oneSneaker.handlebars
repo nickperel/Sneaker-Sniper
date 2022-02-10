@@ -1,4 +1,6 @@
-<h1>{{newSneaker.sneaker_name}} </h1><br>
+
+<div class="sneaker">
+<h1 >{{newSneaker.sneaker_name}} </h1><br>
 <h1> price: ${{newSneaker.price}} </h1> <br>
 <h1>stock: {{newSneaker.stock}} </h1><br>
 
@@ -10,6 +12,7 @@
 <h1>type : {{newSneaker.type.Type_name}} </h1>
 
 {{#each newSneaker.tags as |tag|}}
-<h2 style="background-color: rgb(44, 230, 168);">{{tag_name}} </h2><br>
+<h2 style="background-color: rgb(252, 51, 1); border-radius: 50px;">{{tag_name}} </h2><br>
 <hr>
 {{/each}}
+</div>
