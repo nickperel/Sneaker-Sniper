@@ -1,7 +1,15 @@
+.shoe-names {
+    color: red
+}
+
+.price-stock {
+    color: white
+}
+
 .footer-basic {
     margin-top: 50%;
     padding:40px 0;
-    background-color:#bdb8b8;
+    background-color:grey;
     color:#000000;
   }
   
@@ -59,4 +67,29 @@
     font-size:13px;
     color:#aaa;
     margin-bottom:0;
+  }
+
+  main {
+    background-color: black;
+  }
+
+  body {
+      background-color: black;
+  }
+
+  nav {
+    background-color: red;
+  }
+
+  nav a {
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .login-text {
+      color: white;
+      padding-top: 50px;
   }

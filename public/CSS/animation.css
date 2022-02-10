@@ -23,26 +23,52 @@
   /* background-color: whitesmoke; */
   font-family: Copperplate, Papyrus, fantasy;
   font-size: 350px;
+  margin-top: 50px;
   border-style: solid;
   border-color: red;
   border-width: 3px;
   /* background: black; */
   box-shadow: lightgrey;
+  background-color: black;
+  justify-content: center;
+  height: 770px;
 }
+
 .page {
   
-  background-color: rgb(71, 68, 68);
-  background-position-x: 10px;
-}
-h1 {
-  background-color: rgb(87, 78, 78);
-  border: red;
-  text-align: center;
-  color: white;
-}
-body {
-  background-image: url('/images/sneakers.png');
-  
+  /* background-color: rgb(71, 68, 68); */
   background-position-x: 10px;
 }
 
+h1 {
+  background-color: black;
+  border: red;
+  text-align: center;
+  color: white;
+  /* width: 350px; */
+  justify-content: center;
+}
+
+.brand-title {
+  background-color: black;
+  border: red;
+  text-align: center;
+  color: white;
+  justify-content: space-around;
+  padding: 36px;
+  margin-top: 23px;
+}
+
+.brand-title-1 :hover {
+  font-size: 50px;
+  color: red;
+}
+
+body {
+  background-position-x: 10px;
+  background-image: url('/images/sneakers.png');
+}
+
+main {
+  background-image: url('/images/sneakers.png');
+}
