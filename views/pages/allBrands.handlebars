@@ -1,8 +1,9 @@
 <link rel="stylesheet" href="/CSS/style.css">
 
-<h1>{{newBrands.brand_name}}</h1>
+<h1 class="brandname">{{newBrands.brand_name}}</h1> <br><br><br>
 
-{{#each newBrands.sneakers as |sneakers|}}
+<div class="branditem">
+  {{#each newBrands.sneakers as |sneakers|}}
   <a class="shoe-names" href="/allSneakers/{{id}}"> <h2>{{sneaker_name}} </h2><br></a>
 
   <div class="price-stock">
@@ -13,4 +14,6 @@
    <img src="{{img}}" alt="image of shoes"> <br><hr>
    <hr>
     {{/each}}
+ 
+    </div>
 

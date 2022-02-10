@@ -31,8 +31,10 @@
   box-shadow: lightgrey;
   background-color: black;
   justify-content: center;
-  height: 770px;
+  height: 1200px;
+  
 }
+
 
 .page {
   
@@ -55,8 +57,8 @@ h1 {
   text-align: center;
   color: white;
   justify-content: space-around;
-  padding: 36px;
-  margin-top: 23px;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .brand-title-1 :hover {

@@ -65,7 +65,7 @@
     margin-top:15px;
     text-align:center;
     font-size:13px;
-    color:#aaa;
+    color:rgb(240, 6, 6);
     margin-bottom:0;
   }
 
@@ -79,6 +79,8 @@
 
   nav {
     background-color: red;
+    
+    height: 65px;
   }
 
   nav a {
@@ -94,6 +96,44 @@
       padding-top: 50px;
   }
 
-  .white-text {
+  .sneaker  h1{
     color: white;
+  }
+  .sneaker{
+    text-align: center;
+    
+  }
+
+  .brandname {
+    color: white;
+    text-align: center;
+    font-size: 70px;
+  }
+  .branditem {
+    text-align: center;
+  }
+  .logo img {
+    width:170px;
+  height: 150px;
+  background-color : white;
+ border-radius: 35%;
+ text-align: center;
+ margin-left: 20px;
+ margin-bottom: 100px;
+  
+  }
+  @media only screen and (max-width: 1200px) {
+   .logo img {
+      display: none;
+    }
+    .brand-title {
+      background-color: black;
+      border: red;
+      text-align: center;
+      color: white;
+      justify-content: space-around;
+      padding: 20px;
+      margin: 20px;
+      
+    }
   }
