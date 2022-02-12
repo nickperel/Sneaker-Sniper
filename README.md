@@ -38,7 +38,7 @@
 
   ### Installation
   
-  * In order to use this app, just visit the live link to the website which is hosted on Heroku and will be posted below.
+  * N/A
 
   ### Usage
 
