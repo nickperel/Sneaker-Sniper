@@ -69,10 +69,6 @@
     margin-bottom:0;
   }
 
-  main {
-    background-color: black;
-  }
-
   body {
       background-color: black;
   }
@@ -84,8 +80,6 @@
     align-items: center;
   }
 
-
-
   .home-btn :hover, .login-btn :hover {
     background-color: black;
   }
@@ -93,6 +87,12 @@
   nav a {
     color: white;
     font-size: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .logout-btn {
     margin-left: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -170,3 +170,12 @@
   .form-label-2{
     color: white;
   }
+
+  @media only screen and (max-width: 770px) {
+
+  .shoe-container img {
+    display: flex;
+    width: 100%;
+  }
+
+}
