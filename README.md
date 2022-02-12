@@ -42,7 +42,7 @@
 
   ### Usage
 
-  * In order to use this app, just visit the live link to the website which is hosted on Heroku and will be posted below.
+  * In order to use this app, just visit the live link to the website which is hosted on Heroku and will is listed towards the top of this README file!
 
   ### License Info
   * [MIT License](https://opensource.org/licenses/MIT)
