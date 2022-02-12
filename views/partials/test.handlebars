@@ -1,15 +1,17 @@
-<div><h1>{{newSneaker.sneaker_name}} </h1><br>
-<h1> price : {{newSneaker.price}}$</h1> <br>
-<h1>stock: {{newSneaker.stock}} </h1><br>
+<div>
+    <h1>{{newSneaker.sneaker_name}} </h1><br>
+    <h1> price : {{newSneaker.price}}$</h1> <br>
+    <h1>stock: {{newSneaker.stock}} </h1><br>
 
-<img src="{{newSneaker.img}}" alt="image of shoes"> <br>
-<hr>
+    <img src="{{newSneaker.img}}" alt="image of shoes"> <br>
+    <hr>
 
 
 
-<h1>type : {{newSneaker.type.Type_name}} </h1>
+    <h1>type : {{newSneaker.type.Type_name}} </h1>
 
-{{#each newSneaker.tags as |tag|}}
-<h2 style="background-color: rgb(44, 230, 168);">{{tag_name}} </h2><br>
-<hr>
-{{/each}}</div>
+    {{#each newSneaker.tags as |tag|}}
+    <h2 style="background-color: rgb(44, 230, 168);">{{tag_name}} </h2><br>
+    <hr>
+    {{/each}}
+</div>

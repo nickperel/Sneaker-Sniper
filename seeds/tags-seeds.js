@@ -40,6 +40,9 @@ const tagsData = [
   {
     tag_name: 'multi-color',
   },
+  {
+    tag_name: 'orange',
+  },
 ];
 
 const seedTags = () => Tags.bulkCreate(tagsData);

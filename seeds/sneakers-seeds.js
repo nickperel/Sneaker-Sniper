@@ -88,7 +88,133 @@ const sneakersData = [
     img: '/images/yzymx.png',
     brand_id: 3,
     type_id: 3,
+  },/////////////////
+  {
+    sneaker_name: 'Adidas disney SW',
+    price: 240.00,
+    stock: 10,
+    img: '/images/adidasdisneySW.png',
+    brand_id: 3,
+    type_id: 3,
   },
+  {
+    sneaker_name: 'Air Footscape Woven Chuka Knit',
+    price: 240.00,
+    stock: 15,
+    img: '/images/AirFootscapeWovenChukaKnit.png',
+    brand_id: 2,
+    type_id: 3,
+  },
+  {
+    sneaker_name: 'Air Force 1 Low Only Once',
+    price: 240.00,
+    stock: 12,
+    img: '/images/AirForce1LowOnlyOnce.png',
+    brand_id: 2,
+    type_id: 3,
+  },
+  {
+    sneaker_name: 'asics koi',
+    price: 240.00,
+    stock: 22,
+    img: '/images/asicskoi.png',
+    brand_id: 5,
+    type_id: 2,
+  },
+  {
+    sneaker_name: 'asics 24k',
+    price: 240.00,
+    stock: 11,
+    img: '/images/asics24k.png',
+    brand_id: 5,
+    type_id: 2,
+  },
+  {
+    sneaker_name: 'asics orange koi',
+    price: 240.00,
+    stock: 14,
+    img: '/images/asicsorangekoi.png',
+    brand_id: 5,
+    type_id: 2,
+  },
+  {
+    sneaker_name: 'bodega better days',
+    price: 240.00,
+    stock: 9,
+    img: '/images/bodegabetterdays.png',
+    brand_id: 4,
+    type_id: 3,
+  },
+  {
+    sneaker_name: 'bodega no days off',
+    price: 240.00,
+    stock: 4,
+    img: '/images/bodeganodaysoff.png',
+    brand_id: 4,
+    type_id: 3,
+  },
+  {
+    sneaker_name: 'bodega no bad days',
+    price: 240.00,
+    stock: 2,
+    img: '/images/bodeganobaddays.png',
+    brand_id: 4,
+    type_id: 3,
+  },
+  {
+    sneaker_name: 'jordan 4 kaws',
+    price: 240.00,
+    stock: 3,
+    img: '/images/jordan4kaws.png',
+    brand_id: 1,
+    type_id: 1,
+  },
+  {
+    sneaker_name: 'kith 4d aspen',
+    price: 240.00,
+    stock: 10,
+    img: '/images/kith4daspen.png',
+    brand_id: 3,
+    type_id: 2,
+  },
+  {
+    sneaker_name: 'Kith Ultra boost aspen',
+    price: 240.00,
+    stock: 17,
+    img: '/images/KithUltraboostaspen.png',
+    brand_id: 3,
+    type_id: 2,
+  },
+  {
+    sneaker_name: 'Nike sean w other spoon',
+    price: 240.00,
+    stock: 6,
+    img: '/images/Nikeseanwotherspoon.png',
+    brand_id: 2,
+    type_id: 3,
+  },
+  {
+    sneaker_name: 'Salmon toe asics gel 5',
+    price: 240.00,
+    stock: 45,
+    img: '/images/Salmontoeasicsgel5.png',
+    brand_id: 5,
+    type_id: 2,
+  },
+  {
+    sneaker_name: 'south beach LB 8',
+    price: 240.00,
+    stock: 1,
+    img: '/images/southbeachLB8.png',
+    brand_id: 2,
+    type_id: 1,
+  },
+  
+  
+
+
+
+
 ];
 
 const seedSneakers = () => Sneakers.bulkCreate(sneakersData);
