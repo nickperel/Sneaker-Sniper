@@ -1,19 +1,18 @@
 <link rel="stylesheet" href="/CSS/animation.css">
 
 <div class="logo">
-  <img class="animate__animated animate__heartBeat animate__slower" src="/images/jordan.svg" alt="image">
-  <img class="animate__animated animate__heartBeat animate__slower" src="/images/nike.png" alt="image">
-  <img class="animate__animated animate__heartBeat animate__slower" src="/images/addidas.png" alt="image">
-  <img class="animate__animated animate__heartBeat animate__slower" src="/images/asics.svg" alt="image">
-
+  <img class="animate__animated animate__slideInLeft animate__slow" src="/images/jordan.svg" alt="image">
+  <img class="animate__animated animate__slideInDown animate__slow" src="/images/nike.png" alt="image">
+  <img class="animate__animated animate__slideInUp animate__slow" src="/images/addidas.png" alt="image">
+  <img class="animate__animated animate__slideInRight animate__slow" src="/images/asics.svg" alt="image">
 
   {{#each allBrands as |brand|}}
+
   <a class="brand-title-1" href="/allBrands/{{brand.dataValues.id}}">
+
     <h1 class="brand-title"> {{brand.dataValues.brand_name}}</h1>
   </a>
 
-
   {{/each}}
-
 
 </div>

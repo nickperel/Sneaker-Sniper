@@ -1,12 +1,12 @@
 
-<h1 class="text-center white-text">{{newSneaker.sneaker_name}} </h1>
+<h1 class="text-center white-text animate__animated animate__pulse mt-4">{{newSneaker.sneaker_name}} </h1>
 <h2 class="text-center white-text">${{newSneaker.price}} </h2> 
 <p class="text-center white-text">Stock: {{newSneaker.stock}} </p>
 
 <br>
 <br>
 
-<div class="shoe-container">
+<div class="shoe-container animate__animated animate__pulse">
     <img class="mx-auto d-block" src="{{newSneaker.img}}" alt="image of shoes"> 
 </div>
 
@@ -18,7 +18,7 @@
     <p class="white-text mt-3 text-center">Shoe Attributes</p>
 <ul class="d-flex justify-content-center tag-box">
     {{#each newSneaker.tags as |tag|}}
-        <li class="list-unstyled p-3 mr-2 rounded text-uppercase" style="background-color: rgb(44, 230, 168);">{{tag_name}} </li>
+        <li class="list-unstyled p-3 mr-2 rounded text-uppercase animate__animated animate__fadeInUp animate__slow" style="background-color: rgb(44, 230, 168);">{{tag_name}} </li>
     {{/each}}
 </ul>
 
