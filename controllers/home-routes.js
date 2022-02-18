@@ -8,26 +8,18 @@ router.get('/', (req, res) => {
   res.render('pages/welcome')
 })
  
-
-
-
 //get all brands
 router.get('/allBrands', async (req, res) => {
     try {
       const allBrands = await Brands.findAll({
-    //     include: [
-    //         {
-    //           model:Sneakers,
-    //           attributes: ['sneaker_name', 'type_id'],
-    //         },
-    //       ],
+
       });
   
       const brands = allBrands.map((brands) =>
       brands.get({ plain: true })
     );
-  //console.log('allBrands' , allBrands );
-      res.render('pages/homepage', {
+
+    res.render('pages/homepage', {
         allBrands,
         loggedIn: req.session.loggedIn,
       });
@@ -37,10 +29,8 @@ router.get('/allBrands', async (req, res) => {
     }
   });
 
-
- 
 //get one brand
-  router.get('/allBrands/:id', async (req, res) => {
+  router.get('/allBrands/:id', withAuth, async (req, res) => {
     try {
       const allBrands = await Brands.findByPk(req.params.id, {
         include: [
@@ -70,11 +60,10 @@ router.get('/allBrands', async (req, res) => {
   
 //get all sneakers
 
-router.get('/allSneakers', async (req, res) => {
+router.get('/allSneakers', withAuth, async (req, res) => {
     try {
       const allSneakers = await Sneakers.findAll({
        
-          
       });
   
      
@@ -88,8 +77,9 @@ router.get('/allSneakers', async (req, res) => {
       res.status(500).json(err);
     }
   });
+
 //get one sneaker
-router.get('/allSneakers/:id', async (req, res) => {
+router.get('/allSneakers/:id', withAuth, async (req, res) => {
     try {
       const allSneakers = await Sneakers.findByPk(req.params.id, {
         include: [
