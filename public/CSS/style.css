@@ -183,6 +183,10 @@
     margin-top: 75px;
   }
 
+  .password-req {
+    color: red;
+  }
+
   @media only screen and (max-width: 1200px) {
    .logo img {
       display: none;
