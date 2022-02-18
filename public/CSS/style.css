@@ -11,19 +11,22 @@
 }
 
 .footer-basic {
-    margin-top: 50%;
+    margin-top: 5%;
     padding:40px 0;
     background-color:grey;
     color:#000000;
   }
   
   .footer-basic ul {
-    padding:0;
-    list-style:none;
-    text-align:center;
-    font-size:18px;
-    line-height:1.6;
-    margin-bottom:0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 25px;
+    margin-bottom: 55px;
+    display: flex;
+    justify-content: center;
   }
   
   .footer-basic li {
