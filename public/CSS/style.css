@@ -173,6 +173,16 @@
     text-align: center;
   }
 
+  .login-title {
+    color: red;
+    margin-top: 125px;
+  }
+
+  .signup-title {
+    color: red;
+    margin-top: 75px;
+  }
+
   @media only screen and (max-width: 1200px) {
    .logo img {
       display: none;

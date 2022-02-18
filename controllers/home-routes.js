@@ -125,4 +125,13 @@ router.get('/login', (req, res) => {
   res.render('pages/login');
 });
 
+router.get('/signup', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('pages/sign-up');
+});
+
 module.exports = router;
