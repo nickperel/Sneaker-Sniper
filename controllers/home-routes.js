@@ -5,7 +5,9 @@ const { User, Brands, Types, Tags, Sneakers, SneakerTags } = require('../models'
 const withAuth = require('../utils/auth');
 
 router.get('/', (req, res) => {
-  res.render('pages/welcome')
+  res.render('pages/welcome', {
+    loggedIn: req.session.loggedIn,
+  })
 })
  
 //get all brands
@@ -51,7 +53,11 @@ router.get('/allBrands', async (req, res) => {
         
    const newBrands = allBrands.get({ plain: true });
       //console.log('session is', req.session);
-      res.render('pages/allBrands', { newBrands , username: req.session.username });
+      res.render('pages/allBrands', { 
+        newBrands, 
+        username: req.session.username,
+        loggedIn: req.session.loggedIn, 
+      });
     } catch (err) {
       console.log(err);
       res.status(500).json(err);
@@ -107,7 +113,11 @@ router.get('/allSneakers/:id', withAuth, async (req, res) => {
       const newSneaker = allSneakers.get({ plain: true });
       console.log('the sneaker you want is', newSneaker);
       
-      res.render('pages/oneSneaker', { newSneaker , username: req.session.username });
+      res.render('pages/oneSneaker', { 
+        newSneaker, 
+        username: req.session.username,
+        loggedIn: req.session.loggedIn,
+      });
     } catch (err) {
       console.log(err);
       res.status(500).json(err);
@@ -118,7 +128,7 @@ router.get('/allSneakers/:id', withAuth, async (req, res) => {
 
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect('/');
+    res.redirect('/allBrands');
     return;
   }
 
@@ -126,10 +136,6 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/signup', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/');
-    return;
-  }
 
   res.render('pages/sign-up');
 });
