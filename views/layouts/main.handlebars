@@ -30,14 +30,7 @@
     <div class="container">
       {{{body}}}
     </div>
-  </main>
-
-  {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
-
-        <div class="footer-basic" id="contact-me">
-            <footer>
+            <footer class="footer-basic" id="contact-me">
               <div class="column"></div>
                 <div class="social"><a href="https://www.instagram.com/nickperel/"><i class="icon ion-social-instagram"></i></a><a href="https://www.linkedin.com/in/nicholas-perel-201983176/"><i class="icon ion-social-linkedin"></i></a><a href="https://github.com/nickperel/Sneaker-Sniper"><i class="icon ion-social-github"></i></a></div>
                 <ul class="list-inline">
@@ -49,6 +42,13 @@
                 <p class="copyright">Sneaker Sniper © 2022</p>
                 
             </footer>
-        </div>
+  </main>
+
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+
+        {{!-- <div class="footer-basic" id="contact-me"> --}}
+        {{!-- </div> --}}
 
 </html>
