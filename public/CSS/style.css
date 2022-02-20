@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+main {
+  min-height: 85vh;
+}
+
 .shoe-names {
     color: red
 }
@@ -20,9 +24,6 @@
     padding:40px 0;
     background-color:grey;
     color:#000000;
-    /* position: absolute;
-    width: 100%;
-    bottom: 0; */
   }
   
   .footer-basic ul {
